@@ -68,12 +68,12 @@ function fun3() {
 
 function play() {
   guess.innerHTML = displayQn(modQn);
-  if (qn == enter.value) {
+  if (qn == enter.value.toLowerCase()) {
     guess.innerHTML = "!!YOU GUESSED IT!!<br>The movie is " + qn.toUpperCase();
     form.className = "hidden";
     resetBtn.className = "reset";
-  } else if (qn.includes(enter.value)) {
-    modQn = modifyQn(qn, modQn, enter.value);
+  } else if (qn.includes(enter.value.toLowerCase())) {
+    modQn = modifyQn(qn, modQn, enter.value.toLowerCase());
     let i;
     if (modQn.includes("_")) {
       containsUnderscore = true;
