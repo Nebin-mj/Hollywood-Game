@@ -75,9 +75,9 @@ function play() {
   } else if (qn.includes(enter.value.toLowerCase())) {
     modQn = modifyQn(qn, modQn, enter.value.toLowerCase());
     let i;
+    modQnPlain = modQn;
     if (modQn.includes("_")) {
       containsUnderscore = true;
-      modQnPlain = modQn;
       i = 0;
       while (1) {
         if (modQnPlain.substr(i).includes("_")) {
