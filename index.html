@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hollywood-Game</title>
-    <link rel="icon" href="icon.png" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container" id="container">
-      <div class="dynamic" id="dynamic">
-        <h1 id="hollywood"></h1>
-        <h2 class="hidden" id="guess"></h2>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Hollywood-Game</title>
+      <link rel="icon" href="icon.png" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="container" id="container">
+         <div class="dynamic" id="dynamic">
+            <h1 id="hollywood"></h1>
+            <h2 class="hidden" id="guess"></h2>
+         </div>
+         <form class="hidden" id="form" class="form">
+            <input type="text" name="enter" id="enter" class="enter" />
+            <button type="submit" id="button">!!SURE!!</button>
+         </form>
+         <button class="hidden" id="reset">RESET</button>
+         <button id="start">START</button>
       </div>
-      <form class="hidden" id="form" class="form">
-        <input type="text" name="enter" id="enter" class="enter" />
-        <button type="button" id="button">!!SURE!!</button>
-      </form>
-      <button class="hidden" id="reset">RESET</button>
-      <button id="start">START</button>
-    </div>
-    <script src="app.js"></script>
-  </body>
+      <script src="app.js"></script>
+   </body>
 </html>
